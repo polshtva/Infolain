@@ -22,7 +22,7 @@
         <header class="header">
             <div class="container header__container">
                 <!-- Навигация (логотип, меню, телефон) -->
-                <nav class="nav header__nav">
+                <nav class="nav header__nav ">
                     <!-- logo -->
                     <a href="" class="logo">
                         <!-- Картинка логотипа -->
@@ -34,7 +34,7 @@
                     </a>
                     <!-- end logo -->
                     <!-- список ссылок -->
-                    <ul class="nav__list header__nav-list">
+                    <ul class="nav__list header__nav-list  ">
                         <li class="nav__item">
                             <a href="#!" class="nav__link">Главная</a>
                         </li>
@@ -56,7 +56,8 @@
                     </div>
                     <!-- end телефон -->
                     <!-- Телефон для мобильного меню -->
-                    <a class="header__nav-mobile-phone" href="tel:+73452388-000">+7 (3452) 388-000</a>
+                    <a class="header__nav-mobile-phone" href="tel:+73452388-000">+7 (3452)
+                        388-000</a>
                     <!-- Бургер -->
                     <button class="burger">
                         <span class="burger__el"></span>
@@ -131,7 +132,7 @@
                             <div class="offer__content">
                                 <div class="offer__img-wrap">
                                     <img src="img/rent/rent1.jpg" alt="Фото кабинета" class="offer__img" width="380"
-                                        height="222">
+                                        height="222" srcset="img/rent/image-1@2x.jpg 2x">
                                 </div>
                                 <div class="offer__info">
                                     <ul class="offer__info-list">
@@ -156,7 +157,7 @@
                             <div class="offer__content">
                                 <div class="offer__img-wrap">
                                     <img src="img/rent/rent1.jpg" alt="Фото кабинета" class="offer__img" width="380"
-                                        height="222">
+                                        height="222" srcset="img/rent/image-1@2x.jpg 2x">
                                 </div>
                                 <div class="offer__info">
                                     <ul class="offer__info-list">
@@ -181,7 +182,7 @@
                             <div class="offer__content">
                                 <div class="offer__img-wrap">
                                     <img src="img/rent/rent1.jpg" alt="Фото кабинета" class="offer__img" width="380"
-                                        height="222">
+                                        height="222" srcset="img/rent/image-1@2x.jpg 2x">
                                 </div>
                                 <div class="offer__info">
                                     <ul class="offer__info-list">
@@ -423,15 +424,15 @@
                     <ul class="footer__contact">
                         <li class="footer__contact-item">
                             <a href="" class="footer__contact-link">
-                                <img src="/img/footer/f.svg" alt="" class="footer__contact-img"></a>
+                                <img src="img/footer/f.svg" alt="" class="footer__contact-img"></a>
                         </li>
                         <li class="footer__contact-item">
                             <a href="" class="footer__contact-link">
-                                <img src="/img/footer/vk.svg" alt="" class="footer__contact-img"></a>
+                                <img src="img/footer/vk.svg" alt="" class="footer__contact-img"></a>
                         </li>
                         <li class="footer__contact-item">
                             <a href="" class="footer__contact-link">
-                                <img src="/img/footer/tel.svg" alt="" class="footer__contact-img"></a>
+                                <img src="img/footer/tel.svg" alt="" class="footer__contact-img"></a>
                         </li>
                     </ul>
                 </nav>
@@ -441,28 +442,28 @@
     </div>
 
     <!-- Форма -->
-    <div class="data">
-        <a href="" class="data__click">
+    <div class="form-wrap">
+        <a href="" class="form-wrap__click">
             <img src="img/form/Group 21.png" alt="Крестик" class="data__img"></a>
         <div class="form">
-            <div class="form__head">
-                <p>Оставьте ваши контакты</p>
-            </div>
-            <div class="form__content">
-                <form active="" class="form__input">
-                    <h2 class="form__title">Имя</h2>
-                    <input type="text" class="form__data" required>
-                    <h2 class="form__title">Телефон</h2>
-                    <input type="tel" class="form__data" required>
-                    <h2 class="form__title">Почта</h2>
-                    <input type="email" class="form__data" required>
-                    <p><button class="btn btn_theme_blue offer__btn btn_size_big form__btn ">запросить цену</button></p>
-                </form>
-                <div class="form__manual">
-                    <p>Нажимая на кнопку, вы даёте согласие на обработку своих персональных данных в соответствии с
-                        политикой конфиденциальности</p>
+            <form active="" class="form__input">
+                <div class="form__head">
+                    <p>Оставьте ваши контакты</p>
                 </div>
-            </div>
+                <div class="form__content">
+                    <h2 class="form__title">Имя</h2>
+                    <input type="text" name="name" class="form__data" required>
+                    <h2 class="form__title">Телефон</h2>
+                    <input type="tel" name="phone" class="form__data" required>
+                    <h2 class="form__title">Почта</h2>
+                    <input type="email" name="email" class="form__data" required>
+                    <p><button class="btn btn_theme_blue offer__btn btn_size_big form__btn ">запросить цену</button></p>
+                    <div class="form__manual">
+                        <p>Нажимая на кнопку, вы даёте согласие на обработку своих персональных данных в соответствии с
+                            политикой конфиденциальности</p>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 

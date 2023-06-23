@@ -21,6 +21,14 @@
     color: #000000;
 }
 
+.hero .btn_theme_transparent {
+    color: #FFFFFF;
+}
+
+.btn__rent {
+    display: none;
+}
+
 .btn_size_big {
     padding: 14px 20px;
 }

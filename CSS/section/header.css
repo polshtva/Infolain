@@ -125,6 +125,7 @@
     bottom: 0;
     padding: 16px 16px 50px;
     text-align: center;
+    z-index: 100;
 }
 
 /* Список элементов меню на мобильном устройстве */
@@ -137,6 +138,15 @@
     row-gap: 30px;
     align-self: center;
     flex: 1;
+}
+
+/* 
+.header__nav-mobile .header__phone {
+    display: none;
+} */
+
+.header__nav-mobile .nav__item {
+    margin: 0;
 }
 
 /* Спрятать изображение логотипа белого цвета если он не находится внутри мобильного меню */
@@ -199,6 +209,7 @@
     height: 2px;
     width: 100%;
     position: absolute;
+    transition: all 300ms;
 }
 
 /* Прижать верхний элемент бургера к верхнему краю */
@@ -228,21 +239,21 @@
 
 /* Спрятать средний элемент */
 .header__nav-mobile .burger__el:nth-child(2) {
-    display: none;
+    opacity: 0;
 }
 
 /* Повернуть верхний элемент на 45 градусов */
 .header__nav-mobile .burger__el:nth-child(1) {
     left: 50%;
     top: 50%;
-    transform: translateX(-50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 /* Повернуть нижний элемент на -45 градусов */
 .header__nav-mobile .burger__el:nth-child(3) {
     left: 50%;
     top: 50%;
-    transform: translateX(-50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 /************* БУРГЕР (конец) ************/
