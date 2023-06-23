@@ -18,55 +18,55 @@
 
 <body>
     <div class="wrapper">
-              <!---------- Шапка --------->
-              <header class="header">
-                <div class="container header__container">
-                    <!-- Навигация (логотип, меню, телефон) -->
-                    <nav class="nav header__nav">
-                        <!-- logo -->
-                        <a href="" class="logo">
-                            <!-- Картинка логотипа -->
-                            <img src="./img/icons/logo-icon.svg" alt="Логотип" class="logo__img logo__img--blue">
-                            <!-- Картинка для мобильного меню -->
-                            <img src="./img/icons/logo-icon-white.svg" alt="Логотип" class="logo__img logo__img--white">
-                            <!-- Текст логотипа -->
-                            <span class="logo__title">инфолайн</span>
-                        </a>
-                        <!-- end logo -->
-                        <!-- список ссылок -->
-                        <ul class="nav__list header__nav-list">
-                            <li class="nav__item">
-                                <a href="#!" class="nav__link">Главная</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#!" class="nav__link">Аренда</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#!" class="nav__link">Услуги</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#!" class="nav__link">Контакты</a>
-                            </li>
-                        </ul>
-                        <!-- end список ссылок -->
-                        <!-- телефон -->
-                        <div class="phone header__phone">
-                            <img src="./img/icons/tel.svg" alt="tel" class="tel__icon">
-                            <a href="tel:+73452388000" class="phone__link"> 8 (3452) <span>388-000</span></a>
-                        </div>
-                        <!-- end телефон -->
-                        <!-- Телефон для мобильного меню -->
-                        <a class="header__nav-mobile-phone" href="tel:+73452388-000">+7 (3452) 388-000</a>
-                        <!-- Бургер -->
-                        <button class="burger">
-                            <span class="burger__el"></span>
-                            <span class="burger__el"></span>
-                            <span class="burger__el"></span>
-                        </button>
-                        <!-- end Бургер -->
-                    </nav>
-                </div>
-            </header>    
+        <!---------- Шапка --------->
+        <header class="header">
+            <div class="container header__container">
+                <!-- Навигация (логотип, меню, телефон) -->
+                <nav class="nav header__nav">
+                    <!-- logo -->
+                    <a href="" class="logo">
+                        <!-- Картинка логотипа -->
+                        <img src="./img/icons/logo-icon.svg" alt="Логотип" class="logo__img logo__img--blue">
+                        <!-- Картинка для мобильного меню -->
+                        <img src="./img/icons/logo-icon-white.svg" alt="Логотип" class="logo__img logo__img--white">
+                        <!-- Текст логотипа -->
+                        <span class="logo__title">инфолайн</span>
+                    </a>
+                    <!-- end logo -->
+                    <!-- список ссылок -->
+                    <ul class="nav__list header__nav-list">
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Аренда</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Услуги</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                    <!-- end список ссылок -->
+                    <!-- телефон -->
+                    <div class="phone header__phone">
+                        <img src="./img/icons/tel.svg" alt="tel" class="tel__icon">
+                        <a href="tel:+73452388000" class="phone__link"> 8 (3452) <span>388-000</span></a>
+                    </div>
+                    <!-- end телефон -->
+                    <!-- Телефон для мобильного меню -->
+                    <a class="header__nav-mobile-phone" href="tel:+73452388-000">+7 (3452) 388-000</a>
+                    <!-- Бургер -->
+                    <button class="burger">
+                        <span class="burger__el"></span>
+                        <span class="burger__el"></span>
+                        <span class="burger__el"></span>
+                    </button>
+                    <!-- end Бургер -->
+                </nav>
+            </div>
+        </header>
         <section class="hero">
             <div class="container hero__container">
                 <div class="hero__content">
@@ -80,6 +80,9 @@
                         в тюмени
                     </h1>
                     <button class="btn hero__btn btn_theme_blue btn_size_big">Заказать звонок</button>
+                    <div class="btn__rent">
+                        <button class="btn hero__btn btn_theme_transparent btn_size_big">аренда площади</button>
+                    </div>
                 </div>
                 <div class="hero__img-wrap">
                     <img class="hero__img" src="./img/hero/vertical-shot-white-building-clear-sky.png" alt="Здание">
@@ -109,13 +112,13 @@
                     </ul>
                 </div>
                 <div class="rent__select-wrapp">
-                <select name="plaza" id="plaza" class="rent__select">
-                    <option value="type" disabled selected>вид площади</option>
-                    <option value="offices">Офисы (7)</option>
-                    <option value="conferences"> конференс-залы (2)</option>
-                    <option value="trading">  Торговые (0)</option>
-                </select>
-            </div>
+                    <select name="plaza" id="plaza" class="rent__select">
+                        <option value="type" disabled selected>вид площади</option>
+                        <option value="offices">Офисы (7)</option>
+                        <option value="conferences"> конференс-залы (2)</option>
+                        <option value="trading"> Торговые (0)</option>
+                    </select>
+                </div>
             </div>
             <div class="offers-slider">
                 <div class="container offer-slider__container ">
@@ -420,15 +423,15 @@
                     <ul class="footer__contact">
                         <li class="footer__contact-item">
                             <a href="" class="footer__contact-link">
-                            <img src="/img/footer/f.svg" alt="" class="footer__contact-img"></a>
+                                <img src="/img/footer/f.svg" alt="" class="footer__contact-img"></a>
                         </li>
                         <li class="footer__contact-item">
                             <a href="" class="footer__contact-link">
-                            <img src="/img/footer/vk.svg" alt="" class="footer__contact-img"></a>
+                                <img src="/img/footer/vk.svg" alt="" class="footer__contact-img"></a>
                         </li>
                         <li class="footer__contact-item">
                             <a href="" class="footer__contact-link">
-                            <img src="/img/footer/tel.svg" alt="" class="footer__contact-img"></a>
+                                <img src="/img/footer/tel.svg" alt="" class="footer__contact-img"></a>
                         </li>
                     </ul>
                 </nav>
@@ -440,7 +443,7 @@
     <!-- Форма -->
     <div class="data">
         <a href="" class="data__click">
-        <img src="img/form/Group 21.png" alt="Крестик" class="data__img"></a>
+            <img src="img/form/Group 21.png" alt="Крестик" class="data__img"></a>
         <div class="form">
             <div class="form__head">
                 <p>Оставьте ваши контакты</p>
@@ -448,11 +451,11 @@
             <div class="form__content">
                 <form active="" class="form__input">
                     <h2 class="form__title">Имя</h2>
-                    <input type="text"  class="form__data" required>
+                    <input type="text" class="form__data" required>
                     <h2 class="form__title">Телефон</h2>
-                    <input type="tel"  class="form__data" required>
+                    <input type="tel" class="form__data" required>
                     <h2 class="form__title">Почта</h2>
-                    <input type="email"  class="form__data" required>
+                    <input type="email" class="form__data" required>
                     <p><button class="btn btn_theme_blue offer__btn btn_size_big form__btn ">запросить цену</button></p>
                 </form>
                 <div class="form__manual">
